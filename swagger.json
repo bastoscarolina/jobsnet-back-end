@@ -1,0 +1,124 @@
+{
+    "openapi" : "3.0.0",
+
+    "info" : {
+        "title": "API do Desafio",
+        "description" : "API do Desafio",
+        "version" : "0.0.1"
+    },
+    "servers" : [
+        {
+            "url" : "http://localhost:5000",
+            "description" : "ambiente de desenvolvimento"
+        }
+    ],
+    "paths" : {
+        "/registro" : {
+            "post" : {
+                "summary" : "Cadastro de candidato",
+                "description" : "Rota de cadastro que recebe as informações do candidado",
+                "tags" : ["canditado"],
+                "requestBody" : {
+                    "content" : {
+                        "application/json" : {
+                            "schema" : {
+                                "properties" : {
+                                    "nomeCompleto" : {
+                                        "type": "string"
+                                    },
+                                    "email" : {
+                                        "type" : "string"
+                                    },
+                                    "dia": {
+                                        "type" : "string"
+                                    },
+                                    "mes": {
+                                        "type" : "string"
+                                    },
+                                    "ano":{
+                                        "type": "string"
+                                    },
+                                    "genero" : {
+                                        "type" : "string"
+                                    },
+                                    "status" : {
+                                        "type" : "string"
+                                    },
+                                    "cargo":{
+                                        "type" : "string"
+                                    },
+                                    "rua": {
+                                        "type":"string"
+                                    },
+                                    "numero":{
+                                        "type":"string"
+                                    },
+                                    "bairro":{
+                                        "type":"string"
+                                    },
+                                    "cidade":{
+                                        "type": "string"
+                                    },
+                                    "cep":{
+                                        "type":"string"
+                                    },
+                                    "telefone1": {
+                                        "type":"string"
+                                    },
+                                    "telfone2":{
+                                        "type":"string"
+                                    },
+                                    "celular" :{
+                                        "type":"string"
+                                    },
+                                    "contato":{
+                                        "type":"string"
+                                    },
+                                    "identidade":{
+                                        "type":"string"
+                                    },
+                                    "cpf":{
+                                        "type":"string"
+                                    },
+                                    "veiculo":{
+                                        "type":"string"
+                                    },
+                                    "licenca":{
+                                        "type":"string"
+                                    }
+                                }
+                            },
+                            "examples" : {
+                                "generico" : {
+                                    "value": {
+                                        "nomeCompleto" : "Exemplo de Nome",
+                                        "email" : "exemplo@exemplo.com",
+                                        "dia" : "01",
+                                        "mes" : "junho",
+                                        "ano": "1990",
+                                        "genero": "fluido",
+                                        "status" : "solteiro",
+                                        "cargo": "Dev Full Stack",
+                                        "rua" : "Bandeirantes",
+                                        "numero": "123",
+                                        "bairro": "Jardim Armação",
+                                        "cidade": "Salvador",
+                                        "cep": "40100-000",
+                                        "telefone1" : "71 3232-0000",
+                                        "telefone2" : "71 3232-0001",
+                                        "celular" : "71 99999-9999",
+                                        "contato": "",
+                                        "identidade": "00.000.000-00",
+                                        "cpf": "000.000.000-00",
+                                        "veiculo": "sim",
+                                        "licenca" : "D"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
